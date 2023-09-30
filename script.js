@@ -29,3 +29,35 @@ const countdownInterval = setInterval(() => {
     document.getElementById("timer").innerHTML = "Semangat Ujiannya 😁👍";
   }
 }, 1000);
+
+    // Fungsi untuk menampilkan popup
+    function showPopup() {
+      var currentTime = new Date();
+      var hours = currentTime.getHours();
+
+      // Periksa apakah saat ini antara jam 10:00 pagi dan 12:00 siang
+      if (hours >= 10 && hours < 12) {
+        var popup = document.getElementById("popup");
+        var popupContent = document.getElementById("popup-content");
+        
+        // Tampilkan popup
+        popup.style.display = "block";
+        
+        // Tambahkan konten popup
+        popupContent.innerHTML = "<h2>Ingin Mengerjakan Ulangan?</h2><button onclick='redirectToURL()'>Ya</button><button onclick='closePopup()'>Tidak</button>";
+      }
+    }
+
+    // Fungsi untuk mengarahkan ke URL yang ditentukan
+    function redirectToURL() {
+      window.location.href = "https://sts.smkn7-smr.sch.id/";
+    }
+
+    // Fungsi untuk menutup popup
+    function closePopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+    }
+
+    // Panggil fungsi showPopup ketika halaman dimuat
+    window.onload = showPopup;
