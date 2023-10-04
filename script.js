@@ -26,7 +26,7 @@ const countdownInterval = setInterval(() => {
   // Check if the countdown has expired
   if (timeDifference < 0) {
     clearInterval(countdownInterval);
-    document.getElementById("timer").innerHTML = "Semangat Ujiannya 😁👍";
+    document.getElementById("timer").innerHTML = "Ujian Telah Berakhir";
   }
 }, 1000);
 
