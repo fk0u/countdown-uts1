@@ -1,5 +1,5 @@
 // Set the target date and time for the countdown
-const targetDate = new Date("September 25, 2023 00:00:00").getTime();
+const targetDate = new Date("November 27, 2023 00:00:00").getTime();
 
 // Update the countdown every second
 const countdownInterval = setInterval(() => {
@@ -50,7 +50,7 @@ const countdownInterval = setInterval(() => {
 
     // Fungsi untuk mengarahkan ke URL yang ditentukan
     function redirectToURL() {
-      window.location.href = "https://sts.smkn7-smr.sch.id/";
+      window.location.href = "https://aat.smkn7-smr.sch.id/";
     }
 
     // Fungsi untuk menutup popup
